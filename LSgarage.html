@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEO S RX KING GARAGE</title>
+    <style>
+        /* Pengaturan Dasar - Tema Motor Rx King */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        
+        /* Header & Navigasi */
+        header {
+            background: linear-gradient(135deg, #1f1f1f, #0d0d0d);
+            border-bottom: 3px solid #ffcc00;
+            padding: 25px 20px;
+            text-align: center;
+        }
+        header h1 {
+            color: #ffcc00;
+            font-size: 2.2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+        header p {
+            color: #aaaaaa;
+            margin-top: 5px;
+            font-size: 0.9rem;
+        }
+
+        /* Batas Konten */
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Menu Kategori Singkat */
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .cat-btn {
+            background-color: #222;
+            color: #fff;
+            border: 1px solid #444;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: 0.3s;
+        }
+        .cat-btn:hover, .cat-btn.active {
+            background-color: #ffcc00;
+            color: #121212;
+            font-weight: bold;
+            border-color: #ffcc00;
+        }
+
+        /* Grid Produk */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        /* Kartu Produk Sparepart */
+        .product-card {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: #ffcc00;
+        }
+
+        /* Area Foto */
+        .product-image {
+            width: 100%;
+            height: 220px;
+            background-color: #2a2a2a;
+            overflow: hidden;
+            border-bottom: 1px solid #333;
+        }
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Detail Produk */
+        .product-info {
+            padding: 15px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .product-tag {
+            color: #ffcc00;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        .product-title {
+            font-size: 1.1rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        .product-price {
+            font-size: 1.3rem;
+            color: #00ff66;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        /* Tombol Order WhatsApp */
+        .btn-wa {
+            display: block;
+            text-align: center;
+            background-color: #25d366;
+            color: white;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+            text-transform: uppercase;
+        }
+        .btn-wa:hover {
+            background-color: #1ebd58;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0d0d0d;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            border-top: 1px solid #222;
+            color: #666;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Toko -->
+    <header>
+        <h1>LSS RX KING PART GARAGE</h1>
+        <p>Spesialis Sparepart & Aksesoris RX King Original & Variasi Kualitas Jaminan</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Filter Kategori -->
+        <div class="categories">
+            <button class="cat-btn active">Semua</button>
+            <button class="cat-btn">Mesin</button>
+            <button class="cat-btn">Bodi & Striping</button>
+            <button class="cat-btn">Knalpot</button>
+            <button class="cat-btn">Aksesoris</button>
+        </div>
+
+        <!-- Daftar Sparepart -->
+        <div class="product-grid">
+            
+            <!-- Produk 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/blok-yp1.jpg" alt="Blok Seher RX King YP-1">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-tag">Mesin / Original</div>
+                        <h3 class="product-title">Blok Seher RX King YP-1 Standard Kualitas Thailand</h3>
+                        <p class="product-price">Rp 1.700.000</p>
+                    </div>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B6282167953023&text&type=phone_number&app_absent=0" class="btn-wa" target="_blank">Order via WA</a>
+                </div>
+            </div>
+
+            <!-- Produk 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/knalpot-kolong.jfif" alt="Knalpot Kolong 3v3">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-tag">Knalpot / Variasi</div>
+                        <h3 class="product-title">Knalpot Kolong 3v3 RX King Plat Karat Suara Garing</h3>
+                        <p class="product-price">Rp 750.000</p>
+                    </div>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B6282167953023&text&type=phone_number&app_absent=0" class="btn-wa" target="_blank">Order via WA</a>
+                </div>
+            </div>
+
+            <!-- Produk 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/stripping-list-2003.jpg" alt="Stripping Lis Tangki RX King">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-tag">Bodi & Striping</div>
+                        <h3 class="product-title">Stripping Lis Tangki RX King 2003</h3>
+                        <p class="product-price">Rp 1.100.000</p>
+                    </div>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B6282167953023&text&type=phone_number&app_absent=0" class="btn-wa" target="_blank">Order via WA</a>
+                </div>
+            </div>
+
+            <!-- Produk 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image/karburator-mikuni.jpg" alt="Karburator RX King Mikuni VM26">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-tag">Mesin / Original</div>
+                        <h3 class="product-title">Karburator RX King Mikuni VM26 Original Yamaha (5BP)</h3>
+                        <p class="product-price">Rp 1.200.000</p>
+                    </div>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B6282167953023&text&type=phone_number&app_absent=0" class="btn-wa" target="_blank">Order via WA</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 LSS RX KING GARAGE. Salam Ngoookkk 👑</p>
+    </footer>
+
+</body>
+</html>
